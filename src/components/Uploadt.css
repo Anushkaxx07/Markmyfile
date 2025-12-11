@@ -1,0 +1,175 @@
+/* MAIN CONTAINER */
+.upload-container {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9; /* subtle light gray background */
+}
+
+/* HEADER FIXED + SHIFTED AFTER SIDEBAR */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #1e3a8a; /* deep blue */
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px solid #00000033; /* subtle black border */
+  color: white;
+  overflow: hidden;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: white;
+  white-space: nowrap;
+}
+
+/* PROFILE IMAGE */
+.profile-container {
+  position: relative;
+}
+
+.profile-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* SIDEBAR FIXED */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  padding-top: 80px; /* space for header */ /* subtle border */
+  z-index: 9;
+  background-color: #ededed;
+}
+
+.sidebar-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 1.4rem;
+  color: #000000;
+}
+
+.lab-list {
+  list-style: none;
+  padding: 0;
+}
+
+.lab-list li {
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 6px 12px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000000;
+}
+
+.lab-list li:hover {
+  background-color: #1e40af; /* subtle blue hover */
+  color: white;
+}
+
+/* SIDEBAR BUTTONS */
+.sidebar-btn {
+  display: block;
+  width: 80%;
+  margin: 12px auto;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.sidebar-btn.create {
+  background-color: #2563eb; /* vibrant blue */
+  color: white;
+}
+
+.sidebar-btn.create:hover {
+  background-color: #1d4ed8;
+}
+
+.sidebar-btn.update {
+  background-color: #1e40af; /* darker blue */
+  color: white;
+}
+
+.sidebar-btn.update:hover {
+  background-color: #1e3a8a;
+}
+
+.sidebar-btn.logout {
+  background-color: #374151; /* dark gray */
+  color: white;
+}
+
+.sidebar-btn.logout:hover {
+  background-color: #111827;
+}
+
+/* MAIN CONTENT */
+.main-content.shift {
+  margin-left: 250px; /* Because of sidebar */
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* WELCOME CONTENT */
+.welcome-box {
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-box h1 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #111827; /* black-blue text */
+}
+
+.welcome-box h3 {
+  color: #1e40af; /* subtle blue */
+  margin-top: 5px;
+}
+
+.welcome-box p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #4b5563; /* gray text */
+}
