@@ -84,7 +84,7 @@ const Cart = ({ data, children, onDelete }) => {
           backgroundPosition: "center",
           borderRadius: "10px",
           padding: "3rem",
-          minHeight: "120px",
+          minHeight: "150px",
         }}
       ></div>
 
